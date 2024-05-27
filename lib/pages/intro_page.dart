@@ -7,7 +7,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const  Color.fromARGB(255, 146, 173, 179),
+      backgroundColor: const Color.fromARGB(255, 146, 173, 179),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -15,18 +15,22 @@ class IntroPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // logo
-              Image.asset(
-                  'images/adidas.png',
+              Container(
+                height: 200,
+                width: 200,
+                child: Image.asset(
+                  'images/pumalogo.png',
                 ),
+              ),
 
               const SizedBox(
                 height: 35,
               ),
 
               // title
-               Text(
+              Text(
                 'IMPOSSSIBLE IS NOTHING',
-                style: TextStyle(fontSize: 20,color: Colors.grey.shade900),
+                style: TextStyle(fontSize: 20, color: Colors.grey.shade900),
               ),
 
               const SizedBox(
@@ -34,7 +38,7 @@ class IntroPage extends StatelessWidget {
               ),
 
               // sub title
-               Text(
+              Text(
                 'YOU GOT THIS',
                 style: TextStyle(fontSize: 16, color: Colors.grey.shade900),
               ),

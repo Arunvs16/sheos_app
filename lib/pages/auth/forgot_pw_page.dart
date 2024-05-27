@@ -1,5 +1,3 @@
-// ignore_for_file: use_build_context_synchronously, prefer_interpolation_to_compose_strings
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

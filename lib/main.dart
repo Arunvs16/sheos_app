@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shoes_app/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:shoes_app/model/cart.dart';
 import 'package:shoes_app/pages/intro_page.dart';
 
 void main() async {
@@ -16,9 +18,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return ChangeNotifierProvider(create: (context) => Cart(),
+    builder: (context, child) => const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: IntroPage(),
-    );
+    ),);
   }
 }

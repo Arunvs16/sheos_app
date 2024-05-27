@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
                   // logo
                   DrawerHeader(
                     child: Image.asset(
-                      'images/adidas.png',
+                      'images/pumalogo.png',
                     ),
                   ),
                   const Padding(
@@ -109,8 +109,9 @@ class _HomePageState extends State<HomePage> {
             ],
           )),
       backgroundColor: const Color.fromARGB(255, 146, 173, 179),
-      bottomNavigationBar:
-          MyBottomNavBar(onTabChange: (index) => navigateBottomBar(index)),
+      bottomNavigationBar: MyBottomNavBar(
+        onTabChange: (index) => navigateBottomBar(index),
+      ),
       body: _pages[_selectedIndex],
     );
   }
