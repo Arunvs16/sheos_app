@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoes_app/pages/auth/main_page.dart';
+import 'package:shoes_app/pages/auth/auth_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -52,7 +52,7 @@ class IntroPage extends StatelessWidget {
                 onTap: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const MainPage(),
+                      builder: (context) => const AuthPage(),
                     )),
                 child: Container(
                   decoration: BoxDecoration(
